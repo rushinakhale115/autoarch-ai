@@ -3,6 +3,9 @@
 .venv/
 __pycache__/
 .pytest_cache/
+.pytest-tmp/
+tmp_pytest_deploy/
+*.db
 *.py[cod]
 data/*.db
 data/uploads/
