@@ -16,7 +16,21 @@ st.set_page_config(page_title='AutoArch AI', page_icon='🚘', layout='wide')
 st.markdown('''<style>
 :root{--navy:#10243a;--blue:#256b9a;--steel:#eaf0f5}
 .stApp{background:#f5f7fa;color:#172b3d}.block-container{padding-top:1.5rem;max-width:1500px}
-[data-testid="stSidebar"]{background:#10243a}[data-testid="stSidebar"] *{color:#eef5fb}
+[data-testid="stSidebar"]{background:#10243a;color:#eef5fb}
+[data-testid="stSidebar"] h1,[data-testid="stSidebar"] h2,[data-testid="stSidebar"] h3,
+[data-testid="stSidebar"] p,[data-testid="stSidebar"] label,[data-testid="stSidebar"] [data-testid="stWidgetLabel"] *{
+ color:#eef5fb!important
+}
+[data-testid="stSidebar"] [data-testid="stRadio"] label,
+[data-testid="stSidebar"] [data-testid="stRadio"] label *{color:#eef5fb!important}
+[data-testid="stSidebar"] [data-testid="stSelectbox"] [data-baseweb="select"] *,
+[data-testid="stSidebar"] input,[data-testid="stSidebar"] textarea{
+ color:#172b3d!important;background-color:#fff!important
+}
+[data-testid="stSidebar"] .stButton>button{
+ background:#eaf0f5!important;color:#10243a!important;border:1px solid #c5d1dc
+}
+[data-testid="stSidebar"] .stButton>button *{color:#10243a!important}
 div[data-testid="stMetric"]{background:white;border:1px solid #dce5ed;padding:16px;border-radius:10px;box-shadow:0 2px 8px #10243a0a}
 h1,h2,h3{color:#10243a}.stButton>button{border-radius:7px;border:1px solid #c5d1dc}
 </style>''',unsafe_allow_html=True)
